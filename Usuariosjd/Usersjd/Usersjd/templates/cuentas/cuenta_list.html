@@ -1,0 +1,17 @@
+<h1>Listado de cuentas</h1>
+
+<ul>
+
+    {% for c in cuentas %}
+    <li>{{c.get_tipo_display}}</li>
+    <li>{{c.codigo}}</li>
+    <li><a href="{%url 'cuenta_app:cuenta_update' c.id%}">Modificar Cuenta</a></li>
+    <li><a href="{%url 'cuenta_app:cuenta_delete' c.id%}">Eliminar Cuenta</a></li>
+
+
+
+
+    {% endfor %}
+    <li><a href="{%url 'cuenta_app:cuenta_create'%}">Agregar Cuenta</a></li>
+
+</ul>

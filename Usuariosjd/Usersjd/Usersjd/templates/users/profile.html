@@ -1,0 +1,19 @@
+<h1>Bienvenido Usuario</h1>
+
+
+
+<h1>Panel de Usuario: {{fecha}}</h1>
+<h3>Bienvenido: {{user}}</h3>
+<ul>
+    <li><a href="{%url 'users_app:users_update_profile' user.id %}">Actualizar datos</a></li>
+    <li><a href="{%url 'users_app:users_update'%}">Cambiar Contraseña</a></li>
+    <li><a href="{%url 'cuenta_app:cuenta_list'%}">Ver Billeteras/cuentas</a></li>
+    <li><a href="{%url 'users_app:users_logout'%}">Cerrar Sesion</a></li>
+
+
+
+
+
+
+
+</ul>

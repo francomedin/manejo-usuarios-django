@@ -1,0 +1,9 @@
+<h1>Acceder al sistema</h1>
+<form method="POST">{% csrf_token %}
+    {{form.as_p}}
+
+    <button type="submit">Ingresar</button>
+    <p> ¿No tiene cuenta? <a href="{%url 'users_app:users_register'%}"> Registrese</a></p>
+    <p>Olvido su contraseña:<a href="{%url 'users_app:reset_password'%}"> Haga click aqui.</a></p>
+
+</form>
